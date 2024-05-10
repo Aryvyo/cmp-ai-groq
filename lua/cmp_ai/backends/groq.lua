@@ -73,13 +73,13 @@ Your answer should be:
   end)
 end
 
-function OpenAI:test()
+function groq:test()
   self:complete('def factorial(n)\n    if', '    return ans\n', function(data)
     dump(data)
   end)
 end
 
-return OpenAI
+return groq
 
 
 
